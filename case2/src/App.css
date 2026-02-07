@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: system-ui, -apple-system, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.app-header h1 {
+  color: #e8e8e8;
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  margin: 0;
+  font-weight: 600;
+}
+
+.main-content {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.97);
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+}
+
+.input-section {
+  margin-bottom: 28px;
+}
+
+.input-section h2 {
+  color: #222;
+  margin: 0 0 16px 0;
+  font-size: 1.2rem;
+}
+
+.date-inputs {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input-group label {
+  font-weight: 600;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+.input-group input {
+  padding: 10px 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 88px;
+  text-align: center;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #0f3460;
+}
+
+.functions-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.function-card {
+  background: #f6f8fa;
+  border: 1px solid #eaecef;
+  border-radius: 12px;
+  padding: 18px;
+  text-align: center;
+}
+
+.function-card h3 {
+  color: #333;
+  margin: 0 0 12px 0;
+  font-size: 1rem;
+}
+
+.function-button {
+  background: #0f3460;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.function-button:hover {
+  background: #16213e;
+}
+
+.result {
+  margin-top: 12px;
+  padding: 10px;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 8px;
+  color: #155724;
+  font-size: 15px;
+}
+
+.console-section {
+  margin-top: 24px;
+}
+
+.console-container {
+  background: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.console-header {
+  background: #2d2d30;
+  padding: 10px 14px;
+}
+
+.console-title {
+  color: #ccc;
+  font-size: 13px;
+}
+
+.console-output {
+  margin: 0;
+  padding: 16px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #d4d4d4;
+  white-space: pre-wrap;
+}
+
+@media (max-width: 600px) {
+  .main-content {
+    padding: 18px;
+  }
+  .date-inputs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .functions-section {
+    grid-template-columns: 1fr;
+  }
+}

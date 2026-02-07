@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кейс 3 — Слайдер изображений</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="slider-wrapper">
+      <h1 class="slider-title">
+        Кейс №3 — Создайте простой слайдер изображений.
+      </h1>
+      <div class="slider">
+        <div class="slider-viewport">
+          <img src="" alt="" class="slider-image" id="sliderImage" />
+        </div>
+        <div class="slider-controls">
+          <button
+            type="button"
+            class="slider-btn slider-btn-prev"
+            id="btnPrev"
+            aria-label="Назад">
+            ‹ Назад
+          </button>
+          <button
+            type="button"
+            class="slider-btn slider-btn-next"
+            id="btnNext"
+            aria-label="Вперед">
+            Вперед ›
+          </button>
+        </div>
+        <p class="slider-counter" id="sliderCounter">Изображение 1 из 5</p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
